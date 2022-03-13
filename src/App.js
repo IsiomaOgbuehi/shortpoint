@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 
 function App() {
+  const [meter, setMeter] = useState('50%');
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="progress" role="progressbar" data-label="50% Complete">
+        <div className="meter meterGreen" style={{ width: meter }}>
+          <div className="meter-label">{meter}</div>
+        </div>
+      </div>
+      <div className="progress" role="progressbar" data-label="50% Complete">
+        <div className="meter meterRed" style={{ width: meter }}>
+          <div className="meter-label">{meter}</div>
+        </div>
+      </div>
+      <div className="progress" role="progressbar" data-label="50% Complete">
+        <div className="meter meterWhite" style={{ width: meter }}>
+          <div className="meter-label">{meter}</div>
+        </div>
+      </div>
+      <div className="progress" role="progressbar" data-label="50% Complete">
+        <div className="meter meterBlue" style={{ width: meter }}>
+          <div className="meter-label">{meter}</div>
+        </div>
+      </div>
+      <div className="progress" role="progressbar" data-label="50% Complete">
+        <div className="meter meterYellow" style={{ width: meter }}>
+          <div className="meter-label">{meter}</div>
+        </div>
+      </div>
+      <button style={{ marginTop: "30px" }} onClick={() => setMeter("100%")}>
+        Finish
+      </button>
     </div>
   );
 }
