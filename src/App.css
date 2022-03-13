@@ -45,7 +45,7 @@ color: #4A5E37;
   background-color: #6EBFEC;
   border: 2px solid #6BA7C6;
 }
-.meterRed .meter-label{
+.meterBlue .meter-label{
   color: #345F77;
 }
 
@@ -53,8 +53,8 @@ color: #4A5E37;
   background-color: #FFD677;
   border: 2px solid #CEA64F;
 }
-.meterRed .meter-label{
-  color: #72552A;
+.meterYellow .meter-label{
+  color: #725628;
 }
 
 .meter{
